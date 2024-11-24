@@ -1,0 +1,29 @@
+<div class="login-container">
+    <div class="carreau">
+        <h2 mat-dialog-title
+            style="text-align: center;color: rgb(252, 252, 252);font-size: 22px;font-family:sans-serif;position: absolute;right: 180px;bottom: -2px;">
+            Se connecter</h2>
+    </div>
+    <div style="position: absolute;right: 130px;bottom: 280px;left: 100px;">
+        <h3 style="text-align: center;font-family:sans-serif;font-size:15 px;">
+            Connectez-vous à votre compte </h3>
+    </div>
+    <form>
+        <div class="mail">
+            <input type="email" class="form-control" placeholder="Email*" style="background-color:rgb(236, 243, 241);"
+                name="email" id="email">
+        </div>
+        <div class="pwd">
+            <input type="password" class="form-control" placeholder="mot de passe*" name="password"
+                style="background-color:rgb(236, 243, 241);" id="password">
+        </div>
+        <div class="btn2">
+            <button type="button" class="btn" (click)="login()">Se connecter</button>
+        </div>
+
+        <p class="parg">vous n'avez pas un compte, <a (click)="gotosign()"
+                style="color: blue;cursor: pointer;">créer</a></p>
+
+    </form>
+
+</div>

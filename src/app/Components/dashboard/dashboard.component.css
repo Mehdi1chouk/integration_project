@@ -1,0 +1,14 @@
+.card {
+  margin: 50px; /* Adjust the value as needed */
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#addbtn{
+  margin-left: 1400px;
+  display: block;
+  margin-top: 10px;
+}
+
+

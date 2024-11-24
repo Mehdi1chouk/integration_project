@@ -1,0 +1,265 @@
+.titre, .surface, .price {
+    position: relative;
+    margin-bottom: 10px; /* Space between sections */
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.titre .form-label, .surface .form-label, .price .form-label {
+    display: block;
+    font-size: 16px; /* Adjust label size */
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.titre input, .surface input, .price input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px; /* Gap between label and input */
+    margin-left: 60px;
+}
+
+.select-container {
+    display: flex; /* Align children side by side */
+    justify-content: start; /* Adjust alignment */
+    gap: 30px; /* Space between governorate and city */
+    margin: 20px 100px 50px 110px; /* Adjust margins as needed */
+}
+
+.governorate, .city {
+    display: flex;
+    flex-direction: column; /* Align label and select vertically */
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and select */
+}
+
+.form-select {
+    width: 300px; /* Adjust width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.type-container {
+    margin: 50px 115px; /* Adjust spacing around the container */
+}
+
+.type-title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.type-options {
+    display: flex; /* Arrange options horizontally */
+    gap: 20px; /* Add space between options */
+    margin-top: 10px;
+}
+
+.type-options label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.type-radio {
+    margin-right: 5px; /* Add space between radio button and label */
+}
+
+
+
+
+
+
+.etat-container {
+    margin: 20px 115px; /* Adjust spacing around the container */
+}
+
+.etat-title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.etat-options {
+    display: flex; /* Arrange options horizontally */
+    gap: 20px; /* Add space between options */
+    margin-top: 10px;
+}
+
+.etat-options label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.etat-radio {
+    margin-right: 5px; /* Add space between radio button and label */
+}
+
+
+
+
+
+
+
+.counter-container {
+    display: flex;
+    justify-content : space-around; /* Adjust horizontal spacing */
+    margin: 50px 0px 0px -650px;
+    
+    
+    padding-inline: 700px; /* Reduce vertical margin if needed */
+  }
+  
+  .counter {
+    display: flex;
+    flex-direction: column; /* Stack label above counter controls */
+    align-items: center; /* Center align the items */
+    gap: 2px; /* Reduce space between label and controls */
+  }
+  
+  .counter-controls {
+    display: flex;
+    align-items: center; /* Align buttons and input vertically */
+    gap: 5px; /* Reduce space between buttons and input */
+  }
+  
+  .counter button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+  }
+  
+  .counter button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .counter input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+.description {
+    margin: 30px 100px; /* Adjust spacing as needed */
+    width: 50%; /* Make the description span wider */
+}
+
+.description .form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and textarea */
+}
+
+.description textarea {
+    width: 100%; /* Full width within the container */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+
+
+
+.photo-upload {
+    margin: 25px 0px 0px 350px; /* Adjust spacing */
+    text-align: center;
+}
+
+.photo-label {
+    display: block;
+    cursor: pointer;
+}
+
+.photo-area {
+    width: 200px; /* Square size */
+    height: 200px;
+    border: 2px dashed #ccc; /* Dashed border for drag-and-drop effect */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, border-color 0.3s;
+    
+}
+
+.photo-area:hover {
+    background-color: #e8f4ff;
+    border-color: #007bff;
+}
+
+.photo-text {
+    color: #888;
+    font-size: 14px;
+}
+
+.photo-input {
+    display: none; /* Hide the input field */
+    
+}
+
+
+.submit-button {
+    margin-top: 20px;  /* Add spacing above the button */
+    text-align: center;  /* Center align the button */
+    margin-bottom: 20px;
+}
+
+/* Styling for the button */
+.btn-ajouter {
+    padding: 10px 20px;  /* Add padding to the button */
+    font-size: 16px;  /* Font size for the button text */
+    background-color: #007bff;  /* Button background color */
+    color: white;  /* Button text color */
+    border: none;  /* Remove the default border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Change cursor on hover */
+    transition: background-color 0.3s ease;  /* Smooth background color transition */
+    width: 500px;
+    margin-right: 600px;
+
+}
+
+.btn-ajouter:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+
+

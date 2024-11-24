@@ -1,0 +1,167 @@
+<div class="titre">
+    <label class="form-label">
+        <h3 style="position: absolute; bottom: 38px;">Titre :</h3>
+    </label>
+    <input class="form-control" type="text" placeholder="Donner un titre à votre annonce"
+        aria-label="default input example" name="titre">
+</div>
+
+<div class="surface">
+    <label class="form-label">
+        <h3 style="position: absolute; bottom: 38px;">Surface :</h3>
+    </label>
+    <input class="form-control" type="text" placeholder="Indiquer la surface en m²" aria-label="default input example"
+        name="surface">
+</div>
+
+<div class="price">
+    <label class="form-label">
+        <h3 style="position: absolute; bottom: 38px;">Prix :</h3>
+    </label>
+    <input class="form-control" type="text" placeholder="Entrer le prix en TND" aria-label="default input example"
+        name="price">
+</div>
+
+
+<div class="select-container">
+    <div class="governorate">
+        <label for="governorate-select" class="form-label">
+            <h3 style="margin-bottom: 10px;">Governorate :</h3>
+        </label>
+        <select class="form-select" id="governorate-select" name="governorate">
+            <option value="" disabled selected>Choose a Governorate</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Monastir">Monastir</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+
+    <div class="city">
+        <label for="city-select" class="form-label">
+            <h3 style="margin-bottom: 10px;">City :</h3>
+        </label>
+        <select class="form-select" id="city-select" name="city">
+            <option value="" disabled selected>Choose a City</option>
+            <option value="Tunis City">Tunis City</option>
+            <option value="Msaken">Msaken</option>
+            <option value="Monastir City">Monastir City</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+</div>
+
+
+
+
+<div class="type-container">
+    <label class="form-label">
+        <h3 class="type-title">Type :</h3>
+    </label>
+    <div class="type-options">
+        <label>
+            <input type="radio" name="type" value="villa" class="type-radio">
+            Villa
+        </label>
+        <label>
+            <input type="radio" name="type" value="appartement" class="type-radio">
+            Appartement
+        </label>
+        <label>
+            <input type="radio" name="type" value="maison" class="type-radio">
+            Maison
+        </label>
+        <label>
+            <input type="radio" name="type" value="chambre-partagee" class="type-radio">
+            Chambre Partagée
+        </label>
+    </div>
+</div>
+
+
+
+
+
+<div class="etat-container">
+    <label class="form-label">
+        <h3 class="etat-title">État :</h3>
+    </label>
+    <div class="etat-options">
+        <label>
+            <input type="radio" name="etat" value="nouveau" class="etat-radio">
+            Nouveau
+        </label>
+        <label>
+            <input type="radio" name="etat" value="bon-etat" class="etat-radio">
+            Bon État
+        </label>
+        <label>
+            <input type="radio" name="etat" value="a-renover" class="etat-radio">
+            À Rénover
+        </label>
+    </div>
+</div>
+
+
+
+
+<div class="counter-container">
+    <!-- Chambres Counter -->
+    <div class="counter">
+        <label for="chambres">Chambres:</label>
+        <div class="counter-controls">
+            <button (click)="decrement('chambres')">-</button>
+            <input type="text" id="chambres" [value]="chambres" readonly />
+            <button (click)="increment('chambres')">+</button>
+        </div>
+    </div>
+
+    <!-- Lits Counter -->
+    <div class="counter">
+        <label for="lits">Lits:</label>
+        <div class="counter-controls">
+            <button (click)="decrement('lits')">-</button>
+            <input type="text" id="lits" [value]="lits" readonly />
+            <button (click)="increment('lits')">+</button>
+        </div>
+    </div>
+
+    <!-- Salle de Bain Counter -->
+    <div class="counter">
+        <label for="salleDeBain">Salle de Bain:</label>
+        <div class="counter-controls">
+            <button (click)="decrement('salleDeBain')">-</button>
+            <input type="text" id="salleDeBain" [value]="salleDeBain" readonly />
+            <button (click)="increment('salleDeBain')">+</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="description">
+    <label for="description-textarea" class="form-label">
+        <h3 style="margin-bottom: 10px;">Description :</h3>
+    </label>
+    <textarea class="form-control" id="description-textarea" name="description"
+        placeholder="Provide a detailed description of your announcement" rows="5"></textarea>
+</div>
+
+
+<div class="photo-upload">
+
+    <label for="image-upload" class="photo-label">
+        <div class="photo-area">
+            <span class="photo-text">Click or Drag & Drop Images Here</span>
+        </div>
+    </label>
+    <input type="file" id="image-upload" class="photo-input" name="images" multiple accept="image/*">
+</div>
+
+
+
+<div class="submit-button">
+    <button type="submit" class="btn-ajouter">Ajouter Immobilier</button>
+</div>

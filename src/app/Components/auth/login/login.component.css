@@ -1,0 +1,67 @@
+.login-container {
+    width: 500px;
+    height: 430px;
+    border: 1px solid #ccc;
+    display: flex;
+    position: absolute;
+    right: 550px;
+    bottom: 140px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.carreau {
+    position: absolute;
+    bottom: 368px;
+    width: 500px;
+    height: 60px;
+    background-color: rgb(71, 166, 211);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.mail {
+    position: absolute;
+    left: 28px;
+    bottom: 180px;
+    width: 380px;
+    margin: 27px;
+}
+
+.pwd {
+    position: absolute;
+    left: 28px;
+    bottom: 110px;
+    width: 380px;
+    margin: 27px;
+}
+
+.btn {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: absolute;
+    right: 190px;
+    bottom: 45px;
+    width: 150px;
+    background-color: rgb(71, 166, 211);
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 50px;
+    font-size: 20px;
+}
+
+.parg {
+    position: absolute;
+    right: 10px;
+    bottom: -5px;
+}

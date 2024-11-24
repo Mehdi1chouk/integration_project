@@ -1,0 +1,113 @@
+.carreau1 {
+    position: absolute;
+    bottom: -20px;
+    width: 1100px;
+    height: 630px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    right: 180px
+}
+
+
+.carousel-container {
+    position: absolute;
+    top: -75px;
+    right: 220px;
+}
+
+.carousel-container .carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container .carousel-inner .carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.carousel-container .carousel-inner .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+
+.pom {
+    margin: 90px;
+    width: 135%;
+    height: 300%;
+}
+
+.carreau2 {
+    position: relative;
+    width: 700px;
+    height: auto; /* Adjust height automatically based on content */
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 700px 70px 50px 235px;
+}
+
+.carreau3 {
+    position: relative;
+    width: 700px;
+    height: auto; /* Adjust height automatically based on content */
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 90px 240px 100px 230px; /* Push down using top margin */
+}
+
+/* .carreau4 {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 200px; 
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0px 20px 50px 1000px; 
+    
+} */
+
+.carreau4 {
+    position: absolute; /* Position it relative to its nearest positioned parent */
+    top: 760px; /* Adjust this value to move it closer to the top */
+    left: 1000px; /* Maintain horizontal alignment */
+    width: 400px;
+    height: 520px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.titre, .localisation, .prix, .surface,.governorate,.city,.description {
+    margin: 10px 0; /* Add spacing between lines */
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 20px; /* Adjust font size if needed */
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+.login-container {
+    width: 530px;
+    height: 530px;
+    border: 1px solid #ccc;
+    display: flex;
+    position: absolute;
+    right: 500px;
+    bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.carreau {
+    position: absolute;
+    bottom: 469px;
+    width: 530px;
+    height: 60px;
+    background-color: rgb(71, 166, 211);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.name {
+    position: absolute;
+    right: 5px;
+    left: 55px;
+    bottom: 300px;
+    width: 380px;
+}
+
+.mail {
+    position: absolute;
+    left: 28px;
+    bottom: 210px;
+    width: 380px;
+    margin: 27px;
+}
+
+.pwd {
+    position: absolute;
+    left: 28px;
+    bottom: 147px;
+    width: 380px;
+    margin: 27px;
+}
+
+.pwd2 {
+    position: absolute;
+    left: 28px;
+    bottom: 83px;
+    width: 380px;
+    margin: 27px;
+}
+
+.btn {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: absolute;
+    right: 190px;
+    bottom: 65px;
+    width: 150px;
+    background-color: rgb(71, 166, 211);
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 50px;
+    font-size: 20px;
+}
+
+.parg {
+    position: absolute;
+    right: 10px;
+    bottom: -5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
