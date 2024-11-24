@@ -46,18 +46,51 @@
 
 .carreau2 {
     position: relative;
-    width: 700px;
+    width: 600px;
     height: auto; /* Adjust height automatically based on content */
     background-color: rgb(242, 242, 242);
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
-    margin: 700px 70px 50px 235px;
+    margin: 750px 70px 50px 235px;
+
 }
+
+
+
+.carreau2 {
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex; /* Create a row with flexbox */
+    justify-content: space-between; /* Space between label and value */
+    margin: 10px 0; /* Add spacing between rows */
+  }
+  
+  .label {
+    flex: 1; /* Take up space for alignment */
+    font-weight: bold; /* Make labels bold */
+    text-align: left; /* Align text to the left */
+    font-size: 20px;
+  }
+  
+  .value {
+    flex: 1; /* Take up space for alignment */
+    text-align: right; /* Align text to the right */
+    color: #555; /* Optional: Add a slight color to values */
+    word-wrap: break-word; /* Handle long text */
+    font-size: 17px;
+  }
+  
 
 .carreau3 {
     position: relative;
-    width: 700px;
+    width: 1100px;
     height: auto; /* Adjust height automatically based on content */
     background-color: rgb(242, 242, 242);
     border-radius: 10px;
@@ -81,10 +114,10 @@
 
 .carreau4 {
     position: absolute; /* Position it relative to its nearest positioned parent */
-    top: 760px; /* Adjust this value to move it closer to the top */
-    left: 1000px; /* Maintain horizontal alignment */
+    top: 800px; /* Adjust this value to move it closer to the top */
+    left: 940px; /* Maintain horizontal alignment */
     width: 400px;
-    height: 520px;
+    height: 500px;
     background-color: rgb(242, 242, 242);
     border-radius: 10px;
     padding: 20px;
@@ -93,7 +126,7 @@
 
 
 
-.titre, .localisation, .prix, .surface,.governorate,.city,.description {
+.titre, .localisation, .prix, .surface,.governorate,.city,.description ,.etat, .disponibilité, .type, .sdb, .lits , .chambres{
     margin: 10px 0; /* Add spacing between lines */
     word-wrap: break-word;
     white-space: normal;

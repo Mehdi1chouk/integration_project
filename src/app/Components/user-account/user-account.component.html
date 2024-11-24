@@ -1,0 +1,46 @@
+<div class="buttons">
+    <button type="button" class="btn btn-light" id="compte">Logements</button>
+    <button type="button" class="btn btn-light" id="notif" (click)="gotonotification()">Notification</button>
+    <button type="button" class="btn btn-light" id="Favoris" (click)="gotofavoris()">Messages</button>
+    <button type="button" class="btn btn-light" id="Paramètre" (click)="gotoparametres()">Paramètre</button>
+</div>
+
+<div>
+    <button mat-button color="primary" class="addlog" type="button" (click)="goto_add_announcement()">AJOUTER UNE
+        ANNONCE</button>
+</div>
+
+<hr style="width: 1520px;position:absolute;bottom: 510px;right:1px ;height: 75px;">
+
+<img id="userImage" [src]="ProfilImage" alt="User Image">
+<div class="salut">
+    <h1 style="font-size: 50px;">SALUT User</h1>
+</div>
+
+<div class="paragraphe">
+
+    <h5>Voici votre espace réservé.Ici, vous pouvez consulter toutes les informations les plus importantes <br /> que
+        vous avez trouvées sur notre site. Vous pouvez également apporter des modifications à vos <br />annonces si vous
+        avez des modifications à
+        faire. De plus, vous avez la possibilité de supprimer<br /> vos annonces si votre bien n'est plus disponible.
+    </h5>
+</div>
+
+
+
+
+
+
+
+
+<div class="col-md-3">
+
+    <div class="card" style="width: 18rem;cursor: pointer">
+        <img src="assets/app1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-text">Maison a louer a Sousse</h4>
+            <h5 class="card-text">Msaken</h5>
+            <h5 class="card-text">120 dt</h5>
+        </div>
+    </div>
+</div>

@@ -5,6 +5,7 @@ import { DashboardComponent } from "./Components/dashboard/dashboard.component";
 import { DetailsComponent } from "./Components/details/details.component";
 import { LoginComponent } from './Components/auth/login/login.component';
 import { SignUpComponent } from './Components/auth/sign-up/sign-up.component';
+import { UserAccountComponent } from './Components/user-account/user-account.component';
 
 const routes: Routes = [
   { path: 'details', component: DetailsComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
   { path: 'sign-up', component: SignUpComponent },
+  { path: 'UserAccount', component: UserAccountComponent },
 
 
 ];
