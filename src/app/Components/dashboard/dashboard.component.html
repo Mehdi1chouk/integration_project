@@ -1,4 +1,65 @@
-<button type="button" class="btn btn-secondary" id="addbtn" (click)="gotoadd()">add house</button>
+<!-- <button type="button" class="btn btn-secondary" id="addbtn" (click)="gotoadd()">add house</button> -->
+
+<div class="search-bar">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+    <img src="assets/sr.png" class="search" alt="..." (click)="openModal()">
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal" tabindex="-1" *ngIf="isModalOpen">
+  <div class="modal-dialog modal-lg custom-modal">
+    <!-- Added custom class -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Search Filters</h5>
+        <button type="button" class="btn-close" (click)="closeModal()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Select for Type -->
+          <div class="mb-3">
+            <label for="typeSelect" class="form-label">Type de maison</label>
+            <select class="form-select" id="typeSelect" [(ngModel)]="filters.type" name="type">
+              <option value="" disabled selected>Sélectionner le type</option>
+              <option value="villa">Villa</option>
+              <option value="maison">Maison</option>
+              <option value="appartement">Appartement</option>
+              <option value="chambre partage">Chambre Partagée</option>
+            </select>
+          </div>
+
+          <!-- Select for City -->
+          <div class="mb-3">
+            <label for="citySelect" class="form-label">Ville</label>
+            <select class="form-select" id="citySelect" [(ngModel)]="filters.city" name="city">
+              <option value="" disabled selected>Sélectionner la ville</option>
+              <option value="mahdia">Mahdia</option>
+              <option value="sousse">Sousse</option>
+              <option value="monastir">Monastir</option>
+            </select>
+          </div>
+
+          <!-- Select for Number of Rooms -->
+          <div class="mb-3">
+            <label for="roomsSelect" class="form-label">Nombre de chambres</label>
+            <select class="form-select" id="roomsSelect" [(ngModel)]="filters.rooms" name="rooms">
+              <option value="" disabled selected>Sélectionner le nombre</option>
+              <option *ngFor="let room of roomNumbers" [value]="room">{{ room }}</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+        <button type="button" class="btn btn-primary" (click)="applyFilters()">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="row g-0">
 
   <div class="col-md-3">

@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
     width: 530px;
     height: 530px;
     border: 1px solid #ccc;
@@ -31,14 +31,14 @@
     position: absolute;
     right: 5px;
     left: 55px;
-    bottom: 300px;
+    bottom: 330px;
     width: 380px;
 }
 
 .mail {
     position: absolute;
     left: 28px;
-    bottom: 210px;
+    bottom: 250px;
     width: 380px;
     margin: 27px;
 }
@@ -46,9 +46,25 @@
 .pwd {
     position: absolute;
     left: 28px;
-    bottom: 147px;
+    bottom: 200px;
     width: 380px;
     margin: 27px;
+}
+
+.phone {
+    position: absolute;
+    left: 28px;
+    bottom:150px;
+    width: 380px;
+    margin: 27px;
+}
+.usertype{
+    position: absolute;
+    left: 28px;
+    bottom:98px;
+    width: 380px;
+    margin: 27px;
+
 }
 
 .pwd2 {
@@ -67,7 +83,7 @@
     -o-border-radius: 15px;
     position: absolute;
     right: 190px;
-    bottom: 65px;
+    bottom: 55px;
     width: 150px;
     background-color: rgb(71, 166, 211);
     color: aliceblue;

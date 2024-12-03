@@ -1,169 +1,63 @@
-#userImage {
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Buttons Section */
+
+#compte,
+#notif,
+#Favoris,
+#Paramètre {
     position: absolute;
-    bottom: 230px;
-    left: 120px;
-    width: 270px;
+    bottom: 600px;
+    background-color: white;
+    border: none;
+    font-size: 22px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
-.paragraphe {
-    position: absolute;
-    bottom: 290px;
-    left: 500px;
+#compte {
+    left: 1px;
 }
 
-.salut {
-    position: absolute;
-    bottom: 430px;
-    left: 500px;
+#notif {
+    left: 124px;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 35px;
-    text-align: center;
-    font-family: arial;
-    flex-basis: calc(33.33% - 20px);
-    background-color: #ffffff;
+#Favoris {
+    left: 250px;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-top: 600px;
+#Paramètre {
+    left: 365px;
 }
 
-.card img {
-    height: 250px;
-    width: 100%;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
 
-.card .card-body {
-    padding: 10px 50px;
-}
+/* Hover Effects */
 
-.card .card-title {
-    font-size: 20px;
-}
-
-.card .card-text {
-    font-size: 14px;
-    color: gray;
-}
-
-.btn1 {
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    height: 30px;
-    width: 90px;
-    color: blue;
-}
-
-.btn2 {
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    height: 30px;
-    width: 90px;
-    color: red;
-}
-
-#notif:hover {
-    background-color: #ccc;
-}
-
-#compte:hover {
-    background-color: #ccc;
-}
-
-#Favoris:hover {
-    background-color: #ccc;
-}
-
+#compte:hover,
+#notif:hover,
+#Favoris:hover,
 #Paramètre:hover {
     background-color: #ccc;
 }
 
-#compte {
-    position: absolute;
-    left: 1px;
-    bottom: 600px;
-    background-color: white;
-    border-color: white !important;
-    font-size: 22px;
-    border-radius: 6px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-}
 
-#notif {
-    position: absolute;
-    left: 124px;
-    bottom: 600px;
-    background-color: white;
-    border-color: white !important;
-    font-size: 22px;
-    border-radius: 6px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-}
-
-#Favoris {
-    position: absolute;
-    left: 250px;
-    bottom: 600px;
-    background-color: white;
-    border-color: white !important;
-    font-size: 22px;
-    border-radius: 6px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-}
-
-#Paramètre {
-    position: absolute;
-    left: 365px;
-    bottom: 600px;
-    background-color: white;
-    border-color: white !important;
-    font-size: 22px;
-    border-radius: 6px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-}
+/* Add Announcement Button */
 
 .addlog {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     position: absolute;
     right: 100px;
     bottom: 610px;
     background-color: #cdc9c9;
+    border-radius: 10px;
     width: 270px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease;
 }
 
 .addlog:hover {
@@ -171,8 +65,191 @@
 }
 
 
-.card{
+/* Horizontal Rule */
+
+hr {
+    width: 1520px;
     position: absolute;
-    top: 600px;
-   
+    bottom: 510px;
+    right: 1px;
+    height: 75px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+
+/* Card Styles */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 cards per row */
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    justify-content: center;
+    /* Center the grid content */
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    max-width: 300px;
+    margin-top: 90px;
+    margin-left: 28px;
+}
+
+.card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    /* Align buttons to the right */
+    gap: 10px;
+    /* Space between the buttons */
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.card-footer .btn {
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: gray;
+}
+
+
+/* User Info (Avatar and Name) */
+
+.user-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Card Header (User Info) */
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.9);
+    /* Light background */
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    top: 0;
+    /* Align header to the top of the card */
+}
+
+
+/* Tiny User Avatar */
+
+.user-avatar {
+    width: -22px;
+    /* Very small size */
+    height: -22px;
+    /* Very small size */
+    border-radius: 10%;
+    margin-right: 8px;
+    /* Space between avatar and name */
+}
+
+
+/* User Name */
+
+.user-name {
+    font-size: 12px;
+    /* Small font size */
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: #6c1e25;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-primary {
+    background-color: #1c3856;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Special Button Styles */
+
+.btn1,
+.btn2 {
+    border-radius: 60px;
+    height: 30px;
+    width: 90px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn1 {
+    color: blue;
+}
+
+.btn2 {
+    color: red;
+}
+
+
+/* Card Container */
+
+
+/* Special Sections */
+
+#userImage {
+    position: absolute;
+    bottom: 230px;
+    left: 120px;
+    width: 270px;
 }

@@ -6,17 +6,43 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
+  filters = {
+    type: '',
+    city: '',
+    rooms: ''
+  };
+
+  // Array for room numbers
+  roomNumbers = [1, 2, 3, 4, 5];
 
   constructor(private router: Router,) {
 
   }
+  isModalOpen = false;
 
-
-  gotoadd() {
-    this.router.navigate(['add-immo']);
+  openModal() {
+    this.isModalOpen = true;
   }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
+
+
 
   gotodetails() {
     this.router.navigate(['details']);
+  }
+
+
+
+
+
+
+
+
+  applyFilters() {
+    console.log('Filters Applied:', this.filters);
+    this.closeModal(); // Close the modal after applying filters
   }
 }

@@ -11,7 +11,8 @@ import { LoginComponent } from './Components/auth/login/login.component';
 import { SignUpComponent } from './Components/auth/sign-up/sign-up.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserAccountComponent } from './Components/user-account/user-account.component';
-
+import { FilterComponent } from './Components/filter/filter.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,12 +22,14 @@ import { UserAccountComponent } from './Components/user-account/user-account.com
     NavbarComponent,
     LoginComponent,
     SignUpComponent,
-    UserAccountComponent
+    UserAccountComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [

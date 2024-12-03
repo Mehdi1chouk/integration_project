@@ -1,0 +1,25 @@
+<div class="search-bar">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-secondary my-2 my-sm-0" type="button" (click)="openModal()">
+        <img src="assets/sr.png" class="search" alt="Search Icon">
+    </button>
+</div>
+
+<!-- Modal -->
+<div class="modal" tabindex="-1" *ngIf="isModalOpen">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Search Modal</h5>
+                <button type="button" class="btn-close" (click)="closeModal()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Here you can add your modal content.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </div>
+</div>

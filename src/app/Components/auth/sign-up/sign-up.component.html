@@ -1,4 +1,4 @@
-<div class="login-container">
+<div class="signup-container">
     <div class="carreau">
         <h2 mat-dialog-title
             style="text-align: center;color: rgb(252, 252, 252);font-size: 22px;font-family:sans-serif;position: absolute;right: 180px;bottom: -2px;">
@@ -25,6 +25,18 @@
                 aria-describedby="addon-wrapping" style="background-color:rgb(236, 243, 241);" name="password1"
                 required>
         </div>
+        <div class="phone">
+            <input type="text" class="form-control" placeholder="phone Number*"
+                style="background-color:rgb(236, 243, 241);" name="phone" required>
+        </div>
+        <div class="usertype">
+            <select class="form-control" style="background-color: rgb(236, 243, 241);" name="user-type" required>
+                <option value="" disabled selected>Select user type</option>
+                <option value="client">Client</option>
+                <option value="proprietaire">Propriétaire</option>
+            </select>
+        </div>
+
 
         <!-- <div class="pwd2">
             <input type="password" class="form-control" placeholder="Confirmer votre mot de passe*"
